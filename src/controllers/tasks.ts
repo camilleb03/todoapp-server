@@ -17,7 +17,7 @@ const getTaskById = (req: Request, res: Response) => {
             throw err;
         }
         if (result.rowCount === 0)
-            return res.status(404).json(`User ${id} not found`);
+            return res.status(404).json(`Task ${id} not found`);
         return res.status(200).json(result.rows);
     });
 }
@@ -29,7 +29,7 @@ const createTask = (req: Request, res: Response) => {
             throw err;
         }
         return res.status(200).json({
-                message: 'User successfully created',
+                message: 'Task successfully created',
                 body: {
                     task: {
                         name,
@@ -48,8 +48,8 @@ const updateTask = (req: Request, res: Response) => {
             throw err;
         }
         if (result.rowCount === 0)
-            return res.status(404).json(`User ${id} not found`);
-        return res.status(200).json(`User ${id} updated succesfully`);
+            return res.status(404).json(`Task ${id} not found`);
+        return res.status(200).json(`Task ${id} updated succesfully`);
     });
 }
 const deleteTask = async (req: Request, res: Response) => {
@@ -60,8 +60,8 @@ const deleteTask = async (req: Request, res: Response) => {
             throw err;
         }
         if (result.rowCount === 0)
-            return res.status(404).json(`User ${id} not found`);
-        return res.status(200).json(`User ${id} deleted succesfully`);
+            return res.status(404).json(`Task ${id} not found`);
+        return res.status(200).json(`Task ${id} deleted succesfully`);
     });
 }
 
