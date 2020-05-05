@@ -1,0 +1,17 @@
+{
+  "name": "TODO app - Server",
+  "description": "Simple Server",
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "repository": "https://github.com/camilleb03/todoapp-server.git",
+  "logo": "https://small-sharp-tool.com/logo.svg",
+  "env": {
+    "SERVER_PORT": {
+      "description": "A secret key for server port",
+      "generator": "secret"
+    }
+  },
+  "image": "heroku/nodejs"
+}
