@@ -8,7 +8,7 @@
     "build": "tsc"
   },
   "engines": {
-      "node": "10.15"
+    "node": "10.15"
   },
   "keywords": [],
   "author": "",
@@ -23,8 +23,11 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "@types/node": "^13.13.4",
+    "expres": "0.0.5",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "pg": "^8.0.3"
+    "pg": "^8.0.3",
+    "ts-node": "^8.10.1"
   }
 }
