@@ -1,4 +1,4 @@
 # todoapp-server
 Simple Server for Todo App
 
-- Experimenting with Node.js + PostgreSQL
+- Experimenting with Node.js + TypeScript + PostgreSQL
